@@ -16,10 +16,49 @@ public class Mensagem {
 	@GeneratedValue (strategy = GenerationType.IDENTITY)
 	
 	private long id;
-	private smalldatetime dataMensagem;
-	private varchar emissorMensagem;
-	private varchar telefone;
+	private LocalDateTime dataMensagem;
+	private String emissorMensagem;
+	private String telefone;
 	private String texto;
-	private varchar statusMensagem;
+	private String statusMensagem;
+	
+	public long getId() {
+		return id;
+	}
+	public void setId(long id) {
+		this.id = id;
+	}
+	public LocalDateTime getDataMensagem() {
+		return dataMensagem;
+	}
+	public void setDataMensagem(LocalDateTime dataMensagem) {
+		this.dataMensagem = dataMensagem;
+	}
+	public String getEmissorMensagem() {
+		return emissorMensagem;
+	}
+	public void setEmissorMensagem(String emissorMensagem) {
+		this.emissorMensagem = emissorMensagem;
+	}
+	public String getTelefone() {
+		return telefone;
+	}
+	public void setTelefone(String telefone) {
+		this.telefone = telefone;
+	}
+	public String getTexto() {
+		return texto;
+	}
+	public void setTexto(String texto) {
+		this.texto = texto;
+	}
+	public String getStatusMensagem() {
+		return statusMensagem;
+	}
+	public void setStatusMensagem(String statusMensagem) {
+		this.statusMensagem = statusMensagem;
+	}
+	
+	
 
 }
